@@ -1,0 +1,423 @@
+<code>
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+.bodybg{
+	
+	width: 100%;
+	height: 60%;
+	
+	min-width: 100%;
+	min-height: 60%;
+	
+	position: relative;
+}
+
+.bodybg::before{
+	background-image: url("nightclub.jpg");
+	background-size: cover;
+	
+	content: "";
+	display: block;
+	
+	position: fixed;
+	top: -6%;
+	left: 0;
+	width: 100%;
+	height: 132%;
+	
+	z-index: -2;
+	opacity: 0.6;
+	
+	/* BG IMG FX */
+	
+	filter: blur(6px);
+	-webkit-filter: blur(6px);
+	
+	background-color: blue;
+}
+
+@media screen and (max-width:481px){
+	.bodybg::before{
+		background-image: url("nightclubmobile.jpg");
+	}
+}
+
+.bodybg2{
+	
+	width: 100%;
+	height: 100%;
+	
+	min-width: 100%;
+	min-height: 100%;
+	
+	position: relative;
+	
+	display: inline;
+	
+	/* BG IMG FX */
+	
+	/* filter: blur(2px);
+	-webkit-filter: blur(2px); */
+	
+	background-color: black;
+	
+}
+
+.bodybg2::before{
+	/* background-image: url("nachspiel.jpg");
+	background-size: cover; */
+	
+	content: "";
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+	
+	z-index: -1;
+	opacity: 0.4;
+}
+
+@media screen and (max-width:481px){
+	.bodybg2::before{
+		background-image: url("nachspielmobile.jpg");
+	}
+}
+
+.header{
+	 position:fixed;
+	 top:0;
+	 width:100%;
+	 z-index: 2;
+	 min-width:100%;
+}
+
+.headerbox{
+	background-color: black;
+	padding: 1px;
+	border-bottom-color: silver;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.Concept_Button{
+	height:21px;
+	width:80px;
+	border:outset silver 3px;
+	font-size:14px;
+	font-weight:bold;
+	padding: 2px;
+	color:white;
+	-webkit-text-stroke-width: 0.3px;
+	-webkit-text-stroke-color: black;
+	background:#9400ff;
+	text-decoration:none;
+	
+	position: relative;
+	
+	float: right;
+	margin-right: 2%;
+	margin-top: -2%;
+	text-align: center;
+}
+
+.Concept_Button:hover{
+			background:#9400ff;
+			opacity:0.6;
+			
+	}
+		.Concept_Button:visited{
+				border:outset silver 3px;
+				font-weight:bold;
+				font-size:14px;
+				background:#9400ff;
+		}
+			.Concept_Button:link{
+					border:outset silver 3px;
+					font-weight:bold;
+					font-size:14px;
+					background:#9400ff;
+			}
+
+/*EMAIL FORM^*/
+.Left_Box_Style{
+	/* --Look-- */
+		background-color:blue;
+		border-style:solid;
+		border-color:turquoise;
+		border-width:1px;
+		padding:12px;
+		background:rgba(0, 0, 255, 0.3);
+		height:350px;
+		width:392.5px; 
+	    -webkit-text-stroke-width: 0.7px;
+		color:white;
+	    -webkit-text-stroke-color: black;
+		font-weight:bold;
+		font-size:23px;
+	/* --Position--  */ 
+	position: auto;
+	margin-left: 39.6%;
+	margin-top: 12%;
+}
+	
+@media screen and (max-width:481px){
+	.Left_Box_Style{
+		margin: auto;
+		margin-top: 40%;
+		margin-left: -0.2%;
+		
+		z-index: 3;
+		position: relative;
+	}
+}
+/*height:21px;
+	width:80px;
+	border:outset silver 3px;
+	font-size:14px;
+	padding:5px;
+	font-weight:bold;
+	color:white;
+	-webkit-text-stroke-width: 0.3px;
+	-webkit-text-stroke-color: black;
+	background:#9400ff;
+	text-decoration:none;
+	
+	position: relative;
+	
+	float: right;
+	margin-right: 2%;
+	margin-top: -2%;*/
+
+.Form_Button_Style{
+		height:30px;
+		width:100px;
+		border:outset silver 3px;
+		font-size:14px;
+		font-weight:bold;
+		padding:10px;
+		color:white;
+		-webkit-text-stroke-width: 0.3px;
+		-webkit-text-stroke-color: black;
+		background:#9400ff; /* Changed color of button */
+		text-decoration:none;
+		margin-top:-5%;
+		
+	/* --Position--  */ 
+	margin-top:1%;
+	margin-left:46.2%;
+	float:left;
+	top:0;
+	position:fixed;
+}
+	.Form_Button_Style:hover{
+			background:#9400ff;
+			opacity:0.6;
+			
+	}
+		.form_Button_Style:visited{
+				border:solid silver 3px;
+				font-weight:bold;
+				font-size:30px;
+				background:#9400ff;
+		}
+			.form_Button_Style:link{
+					border:solid silver 3px;
+					font-weight:bold;
+					font-size:30px;
+					background:#9400ff;
+			}
+
+#Hide_Form{
+	margin-top:-140px;
+	margin-left:280px;
+	float:left;
+	background:rgba(0, 0, 255, 0.3);
+	height:34px;width:100px; 
+	border:outset 3px turquoise;
+}
+#Hide_Form:hover{
+		margin-top:-140px;
+	margin-left:280px;
+	float:left;
+	opacity:0.6;
+	height:34px;width:100px; 
+	border:outset 3px turquoise;
+}
+
+/*@media screens and (max-width:481px){
+	#Hide_Form{
+		margin-left:280px;
+	}
+}*/
+
+@media screens and (max-width:481px){
+	#Hide_Form:hover{
+		opacity:0.6;
+	}
+}
+/*END of Email form*/	
+
+.skjulKnapp{
+	opacity: 1.0;
+}
+
+/*@media screens and (max-width:481px){
+	.skjulKnapp{
+		opacity: 1.0;
+	}
+}*/
+
+@media screens and (max-width:1300px){
+	.Main_Menu_Box{
+		margin-top:32%;
+	}
+}
+	
+
+.Main_Menu_Box{ 
+	/* --Look-- */
+		font-style: oblique;
+		-webkit-text-stroke-width: 0px;
+		background: rgba(0, 0, 255, 0.3); /* Changed color of main menu box */
+		width: 360px;
+		height: 480px;
+	/* --Position--  */ 
+		margin: auto;
+		margin-top: 16%;
+		border-style: solid;
+		border-color: turquoise; /* Added border */
+		border-width: 1px; 
+		position: relative;
+		z-index: 3;
+	
+}
+.Main_Menu_Box_Link_Text{
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: blue;
+	-webkit-text-stroke-opacity: 0.6;
+	font-size:26px;
+	padding-left:10px;
+	color:white;
+	z-index: 0;
+}
+.Main_Menu_Box_Link_Text:hover{
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	font-size:26px;
+	opacity:0.6;
+	border-bottom:solid 5px white;
+	z-index: 0;
+}
+
+/* .Main_Menu_Box_Header{
+	background-image: url(dna.jpg);
+	opacity: 0.8;
+	width:360px;
+	height:50px;
+	position:relative;
+	margin-top:118%;
+	border-top:ridge 5px blue;
+	z-index: 0;
+} */
+.Main_Menu_Box_Text{
+	font-weight:bold;
+	font-size:20px;
+	z-index: 0;
+}
+/* .Spiel_Text{
+	font-size:40px;
+	font-weight:bold;
+	color:#00F7FF;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: blue;
+} */
+/* disabled body{
+	font-family: "Verdana", Sans-serif;
+	background-image: url(nightclub.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
+} */
+
+@media screen and (max-width:481px){
+	body{
+		width: 100%;
+	}
+}
+
+body{
+	font-family: "Verdana", Sans-serif;
+	
+	width: 100%;
+	height: 100%;
+}
+/*LOG IN*/
+.Log_In{
+	/* --Look-- */
+	color:turquoise;
+}
+
+.conceptbox{
+	
+	background-color: black;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	
+	text-align: center;
+	opacity: 0.6;
+	float: center;
+	
+	color: white;
+	-webkit-text-stroke-width: 0.3px;
+	-webkit-text-stroke-color: black;
+	
+	list-style-position: inside;
+	list-style-type: disc;
+	display: list-item;
+	
+	position: relative;
+	z-index: 0;
+}
+
+.conceptcontainer{
+	border-style: solid;
+	border-width: 1px;
+	border-color: silver;
+	
+	min-width: 100%;
+	width: 100%;
+	
+	background: rgba(0, 0, 0, 0.7);
+	
+	position: relative;
+	z-index: 1;
+}
+
+/* .N{
+
+	-webkit-text-stroke-width: 0.3px;
+	-webkit-text-stroke-color: orange;
+} */
+
+.footer{
+	z-index: 1;
+}
+
+@media screen and (max-width:481px){
+	.footer{
+		height:12px;
+		font-size:4px;
+	}
+}
+
+</code>

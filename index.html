@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<link href="indexcss.css" rel="stylesheet" type="text/css" />
+<head>
+	<link rel="icon" href="webicon.ico" />
+	<link rel="shortcut icon" href="webicon.ico" />
+	<meta http-equiv="content-type" content="text/html" charset="ANSI" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Spiel - Arranger!</title>
+	<style>
+	html{
+		scroll-behavior: smooth;
+	}
+	</style>
+</head>
+
+
+<body onload="myFunction();">
+					<!--
+					<div class="Log_In">
+						<a class="Log_In" href="./loginhtml.html"><h1>LOG IN OR REGISTER</h1></a>
+					</div>
+					-->
+
+
+<div class="bodybg"> <!-- oppdatert BG-div -->
+
+<div class="bigbg"> <!-- Lagt til BG-div istedenfor pa body [UTDATERT]-->
+
+<div class="header" id="myHeader">
+	<div class="headerbox" id="myHeaderBox">
+		<img src="spiel.png" style="padding:10px;width:140px;height:60px;">
+			<a class="Main_Menu_Box_Text"style="-webkit-text-stroke-width:0.2px;
+			-webkit-text-stroke-color:black;top:0;padding:10px;color:white;">Arranger og styr<br> <!-- Changed color -->
+	
+			<a class="Main_Menu_Box_Text"style="top:0;padding:10px;font-size:18px;color:white;-webkit-text-stroke-width:0.2px;
+			-webkit-text-stroke-color:black;"> 
+											Innovativ arrangering</a> <!-- Shrunk text, removed outline and changed color -->
+			</a> 
+		<div id="Form_Button"> 
+			<a href="#top"class="Form_Button_Style"onclick="showForm(); hideFormButton(); focusForm()">Send oss en bestilling!*</a>
+		</div>
+		
+		<div id="Concept_Button_ID">
+			<a href="#bottom"class="Concept_Button"onclick="myFunction()">Konsept</a>
+		</div>
+		
+		<div class="Extra_Text"style="margin:auto;text-align:center;font-size:12px;color:white;">
+			<p>*A sende inn en bestilling er helt uforpliktende</p> <!-- Added extra comment in main menu box div -->
+		</div>
+	</div>
+</div>
+		
+	<!--<div class="Main_Menu_Box">
+		
+		<!--<div class="spielbox">
+		
+				<a style="margin-left:33%;"class="Spiel_Text">Spiel</a>
+				
+			</div> -->
+
+		<!--<div class="Main_Menu_Box_Header">
+		
+			<a class="Main_Menu_Box_Link_Text" href="./concept.html">Konsept</a> 
+				<a class="Main_Menu_Box_Link_Text" href="./about.html">Om oss</a> 
+					<a class="Main_Menu_Box_Link_Text" href="./contact.html">Kontakt</a> 
+					
+			</div> -->
+	
+	<script type="text/javascript">
+	function showForm() {
+			var node = document.getElementById('Left_Box');
+				node.style.visibility = 'visible'; 
+				}
+
+					function hideForm() {
+						 node = document.getElementById('Left_Box');
+							node.style.visibility = 'hidden';
+					}
+					
+						function focusForm() {
+						var elmnt = document.getElementById("Form_Button");
+						elmnt.scrollIntoView();
+						}
+							
+			
+				if ( node = document.getElementById('Left_Box') == 'hidden') {
+				node = document.getElementById('Hide_Form');
+				node.style.visibility = 'hidden';
+				}
+				else {
+				 node = document.getElementById('Hide_Form');
+				node.style.visibility = 'visible';
+				}
+	
+				
+	</script>
+	
+	<script>
+		function myFunction() {
+		var elmnt = document.getElementById("zoom");
+		elmnt.scrollIntoView();
+		}
+	</script>
+
+			<div id="Left_Box"class="Left_Box_Style"style="visibility:hidden;">
+
+				<form method ="post"action="indexphp.php" id="mailform" name="mailform">
+	
+					Navn:				<input type="text" name="Navn" style="margin-left:29%;" id="name" required><br>
+		
+					E-post:				<input type="email" name="Epost" style="margin-left:24.9%;" id="mail" required><br>
+		
+					Telefon:			<input type="tel" name="Telefon" style="margin-left:21.5%;" id="phone" required><br>
+		
+					Kommune: <select name="Fylke" form="mailform" style="margin-left:12.7%;" required id="message"><option value="Eidsvoll">Eidsvoll</option><option value="Ullensaker">Ullensaker</option>
+					<option value="Hurdal">Hurdal</option><option value="Nannestad">Nannestad</option><option value="Nes i Akershus">Nes i Akershus</option><option value="Skedsmo">Skedsmo</option>
+					<option value="Gjerdrum">Gjerdrum</option><option value="Fetsund">Fetsund</option><option value="Lörenskog">Lörenskog</option><option value="Sörum">Sörum</option>
+					<option value="Nittedal">Nittedal</option><option value="Raelingen">Raelingen</option></select><br>
+					
+					Inngang:	<select name="Fest" form="mailform" style="margin-left:18%;" id="subject"><option value="Privatfest">Privat</option><option value="Open Door">"Open Door"</option>
+					<option value="Inngangspenger">Inngangspenger</option><</select><br>
+					
+					Dato:				<input type="date" name="Dato" style="width:150px;margin-left:30.5%;" required id="message"><br>
+		
+					Deltagere:			<input type="number" name="Deltagere" style="width:40px;margin-left:13.8%;" required id="message"><br>
+		
+					Rydding:			<input type="checkbox" name="Rydding" style="width:40px;margin-left:19.5%;" id="message"><br>
+		
+					Vasking:			<input type="checkbox" name="Vasking" style="width:40px;margin-left:20.3%;" id="message"><br>
+		
+					Dorvakt:			<input type="checkbox" name="Dorvakt" style="width:40px;margin-left:20.25%;" id="message"><br>
+		
+					Noe annet?:			<input type="text" name="Melding" style="width:150px;margin-left:8.5%;" id="message"><br>
+		
+					<input type="submit" value="Send" name="Svar" style="width:150px;text-align:center;margin-left:31%;">
+								
+				</form>
+				<div style="text-align:center;margin-top:-30%;"onClick="hideForm()"id="Hide_Form" class="skjulKnapp">
+					Skjul 
+				</div>
+			</div>
+<!--</div>--> <!-- end of Main_Menu_Box, made inactive -->
+
+<div class="zoomPoint" id="zoom">
+<hr style="color:blue;background-color:blue;opacity:0.00;border:none;height:1px;">
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="conceptcontainer">
+	<div class="conceptbox" id="concept">
+	<h1>Konsept</h1>
+	<p><i>Hva er Spiel?</i></p>
+	<h2>Dynamiske arrangementer</h2>
+	<ul>
+		<li>Gjennom kommunikasjon
+		<br><li style="margin-left:-2.74%;">Gjennom fleksibilitet
+		<li>Gjennom brukervennlighet
+	</ul>
+		<p>Med Spiel, slipper du bekymringer for arrangementene dine noensinne igjen.<br>
+		<b>Vi sender ut et team som tar seg av leie av lokale, inngang, musikk og andre effekter. </b><br>Alt i en pakke, til markedets laveste priser.</p>
+		<hr style="opacity:0.50;">
+		<p>For hjemmefester, arrangementer ved lokaler eller lignende.<br>Spiel-representanter sikrer at festen din blir arrangert ordentlig,
+		 og skulle du ha noen tanker, vil vi hjelpe deg.</p>
+	</div>
+</div>
+
+<div class="bodybg2">
+	<img src="chill.jpg" style="width:100%;padding:0;">
+	<img src="planning.jpg" style="width:100%;padding:0;">
+	<img src="houseparty.jpg" style="width:100%;padding:0;">
+</div>
+
+<!--
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr style="color:blue;background-color:blue;opacity:0.00;border:none;height:1px;"> -->
+
+<div class="footer"style="margin-left:0.45%;position:fixed;left:0;bottom:0;width:100%;background-color:black;color:white;text-align:center;font-style:oblique;">
+	<p><i>Spiel Arrangements - 2019</i></p>
+</div>
+
+</div>
+	
+</body>
+	
+</html>
+	
+	
+
